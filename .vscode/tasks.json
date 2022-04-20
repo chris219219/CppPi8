@@ -10,7 +10,12 @@
 				"${workspaceFolder}\\source\\bbp.cpp",
 				"${workspaceFolder}\\source\\threading.cpp",
 				"${workspaceFolder}\\source\\main.cpp",
-				"-O2",
+				"-oFast",
+                "-ffast-math",
+                "-march=native",
+                "-mtune=native",
+                "-flto",
+                "-m64",
 				"-o",
 				"${workspaceFolder}\\CppPi8.exe"
 			],
