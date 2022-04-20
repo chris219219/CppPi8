@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build project",
+			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"args": [
+				"${workspaceFolder}\\source\\cppmath.cpp",
+				"${workspaceFolder}\\source\\bbp.cpp",
+				"${workspaceFolder}\\source\\threading.cpp",
+				"${workspaceFolder}\\source\\main.cpp",
+				"-O2",
+				"-o",
+				"${workspaceFolder}\\CppPi8.exe"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\g++.exe"
+		}
+	]
+}
